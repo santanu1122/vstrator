@@ -1,0 +1,22 @@
+{
+    "userName": "user@example.com",
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "user@example.com",
+    "primarySport": "Other",
+    "profilePictureUrl": "http://foobar.com/image.jpg",
+    "userKey": "641a4b6d-6c28-4c86-9195-02287898291c",
+    "socialMediaID": "100003929805234",
+    "profileDescription": "",
+    "profileColor": "#000000",
+    "profileText": "",
+    "defaultVstratedClipVisibility": 0,
+    "defaultClipVisibility": 0,
+    "profileVisibility": 0,
+    "subscriptionStatus": 0,
+    "debugUser": false,
+    "city": "",
+    "stateProvince": "",
+    "profileQuote": "",
+    "membershipLevel": 0
+}

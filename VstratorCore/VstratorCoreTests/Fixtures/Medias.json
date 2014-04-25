@@ -1,0 +1,34 @@
+ [
+  {
+  "videoKeyType":0,
+  "videoKey":"3d84372e-3d58-47e3-9a63-941cba0853a6",
+  "title":"Baseball Swing",
+  "videoDate":"2012-06-03T08:42:26.897",
+  "videoUrl":"https://www.vstrator.com/video/clips/3d84372e-3d58-47e3-9a63-941cba0853a6",
+  "encodingStatus":2,
+  "sport":"Baseball",
+  "action":"Batting",
+  "notes": "sample notes"
+  },
+  {
+  "videoKeyType":0,
+  "videoKey":"479fc13d-eb3d-46af-8d84-5e3d4983702f",
+  "title":"Goalie Save",
+  "videoDate":"2012-06-03T08:42:27.163",
+  "videoUrl":"https://www.vstrator.com/video/clips/479fc13d-eb3d-46af-8d84-5e3d4983702f",
+  "encodingStatus":2, "sport":"Hockey",
+  "action":"Goaltending",
+  "notes": "sample notes"
+  },
+  {
+  "videoKeyType":0,
+  "videoKey":"6e88cd13-e33e-4a6d-a986-818adb692b90",
+  "title":"Tennis Serve",
+  "videoDate":"2012-06-03T08:42:27.397",
+  "videoUrl":"https://www.vstrator.com/video/clips/6e88cd13-e33e-4a6d-a986-818adb692b90",
+  "encodingStatus":2,
+  "sport":"Tennis",
+  "action":"Serve",
+  "notes": "sample notes"
+  }
+]

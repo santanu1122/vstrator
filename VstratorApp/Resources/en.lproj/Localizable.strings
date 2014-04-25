@@ -1,0 +1,453 @@
+/*
+ Localizable.strings
+ VstratorApp
+
+ Created by Oleg Bragin on 12.07.12.
+ Copyright (c) 2012 OnTarget. All rights reserved.
+ */
+/* ----  Button titles ----  */
+
+/* Home \ Pro */
+"homeProUserStrokesButtonTitle" = "Strokes";
+"homeProUserTutorialsButtonTitle" = "Tutorials";
+"homeProUserInterviewsButtonTitle" = "Interviews";
+
+/* Home \ Capture Clip */
+"homeCaptureClipDialogTitle" = "Choose Source:";
+"homeCaptureClipCancelButtonTitle" = "Cancel";
+"homeCaptureClipCloseButtonTitle" = "Close";
+"homeCaptureClipImportButtonTitle" = "Import\nfrom\nPhoto Album";
+"homeCaptureClipShowGuidesButtonTitle" = "Guides";
+"homeCaptureClipPickFromLibraryButtonTitle" = "Photo Album";
+"homeCaptureClipUseCameraButtonTitle" = "Camera";
+"homeCaptureClipFpsLabel" = "FPS";
+
+/* Home \ Side-by-Side */
+"homeSideBySideCaptureClipButtonTitle" = "Record";
+"homeSideBySideSelectClipButtonTitle" = "Select Video";
+"homeSideBySideStartSideBySideClipButtonTitle" = "Vstrate";
+
+/* Home \ Vstrate */
+"homeVstrateAllButtonTitle" = "ALL";
+"homeVstrateProContentButtonTitle" = "Pro";
+"homeVstrateProClipsButtonTitle" = "Pro Videos";
+"homeVstrateCaptureClipButtonTitle" = "Camera";
+"homeVstrateMyClipsButtonTitle" = "Videos";
+"homeVstrateSideBySideButtonTitle" = "Side by Side";
+"homeVstrateVstrateButtonTitle" = "My Videos";
+"homeVstrateVstratedClipsButtonTitle" = "Vstrated Videos";
+
+/* Media \ Clip Playback */
+"mediaClipPlaybackDoneButtonTitle" = "Done";
+
+/* Media \ Clip/Session Edit */
+"mediaClipSessionEditCancelButtonTitle" = "Cancel";
+"mediaClipSessionEditYesButtonTitle" = "Yes";
+"mediaClipSessionEditNoButtonTitle" = "No";
+"mediaClipSessionEditDeleteClipButtonTitle" = "Delete Video";
+"mediaClipSessionEditSaveAndShootButtonTitle" = "Save and Shoot";
+"mediaClipSessionEditSaveAndUseButtonTitle" = "Done";
+"mediaClipSessionEditDeleteAndShootButtonTitle" = "Camera";
+"mediaClipSessionEditDoYouWantToDelete" = "Do you want to delete this video?";
+"mediaClipSessionEditTitleEditMode" = "Edit Details";
+"mediaClipSessionEditTitleVstrationMode" = "Save Video";
+
+/* Media \ Clip/Session View (Open) */
+"mediaClipSessionViewCancelButtonTitle" = "Cancel";
+"mediaClipSessionViewDetailsButtonTitle" = "Edit";
+"mediaClipSessionViewDoneButtonTitle" = "Done";
+"mediaClipSessionViewSaveButtonTitle" = "Save";
+"mediaClipSessionViewShareButtonTitle" = "Share";
+"mediaClipSessionViewSideBySideButtonTitle" = "Side by Side";
+"mediaClipSessionViewTrimButtonTitle" = "Trim";
+"mediaClipSessionViewUploadButtonTitle" = "Upload";
+"mediaClipSessionViewUploadedButtonTitle" = "Uploaded";
+"mediaClipSessionViewUploadingButtonTitle" = "Uploading";
+"MediaClipSessionViewUploadRetryButtonTitle" = "Retry";
+"mediaClipSessionViewVstrateButtonTitle" = "Vstrate";
+"mediaClipSessionViewDownloadButtonTitle" = "Download";
+"MediaClipSessionViewSessionLogoTitle" = "VSTRATED VIDEO";
+
+/* Download Content */
+
+"downloadContentTitleText" = "Select a video series to download.";
+
+/* Media \ Session Creation */
+"mediaClipSessionCreationColorsButtonTitle" = "Colors";
+"mediaClipSessionCreationStartButtonTitle" = "Record";
+"mediaClipSessionCreationStopButtonTitle" = "Stop";
+"mediaClipSessionCreationToolsButtonTitle" = "Tools";
+"mediaClipSessionCreationUndoButtonTitle" = "Undo";
+"mediaClipSessionCreationBackButtonTitle" = "Back";
+"mediaClipSessionCreationTimelineButtonTitle" = "Timeline";
+"mediaClipSessionCreationZoomButtonTitle" = "Zoom";
+
+/* Media \ Session Playback */
+"mediaSessionPlaybackRedoButtonTitle" = "Redo";
+"mediaSessionPlaybackSaveButtonTitle" = "Save";
+
+/* Media \ List/Cells */
+
+"mediaListViewCellSelectButtonTitle" = "Select";
+"mediaListViewCellDeleteButtonTitle" = "Delete";
+"mediaListViewHeaderSyncButtonTitle" = "Sync videos from Vstrator.com";
+"mediaListViewProHeaderDownloadButtonTitle" = "Download more Rafa videos.";
+
+/* Navigation Bar */
+"navigationBarBackButtonTitle" = "Back";
+"navigationBarCancelButtonTitle" = "Cancel";
+"navigationBarDoneButtonTitle" = "Done";
+"navigationBarInfoButtonTitle" = "Info";
+"navigationBarSearchButtonTitle" = "Search";
+
+/* User Info */
+"userInfoAboutThisAppButtonTitle" = "About this App";
+"userInfoGetHelpButtonTitle" = "Send Feedback";
+"userInfoLogoutButtonTitle" = "Logout";
+"userInfoRateThisAppButtonTitle" = "Rate this App";
+"userInfoSupportSiteButtonTitle" = "Help & Support Site";
+"userInfoTermsOfUseButtonTitle" = "Terms of Use";
+"userInfoTutorialButtonTitle" = "Intro Tutorial";
+"userInfoViewAccountInfoButtonTitle" = "Vstrator Account Info";
+"userInfoUploadQueueButtonTitle" = "Upload Status";
+"userInfoFeedbackTypeLabel" = "Feedback Type:";
+"UserInfoUploadQualityButtonTitle" = "Upload Quality";
+"UserInfoUploadOptionButtonTitle" = "Upload Options";
+"UserInfoInviteFriendsButtonTitle" = "Invite Friends";
+
+/* User Info \ Version of the App */
+"userInfoVersionOfTheAppLinkToRelatedSitesButtonTitle" = "Link to related sites";
+
+/* User Info \ Get Help */
+"userInfoGetHelpSendButtonTitle" = "Send";
+
+/* User Info \ View Account Info */
+"userInfoViewAccountInfoChangePasswordButtonTitle" = "Change Password";
+"userInfoViewAccountInfoChangePictureButtonTitle" = "Change Picture";
+"userInfoViewAccountInfoUpdateButtonTitle" = "Update";
+
+/* User Info \ View Account Info \ Change Password */
+"userInfoViewAccountInfoChangePasswordChangePasswordButtonTitle" = "Change Password";
+
+/* User Info \ View Account Info \ Change Picture */
+"userInfoViewAccountInfoChangePictureCloseButtonTitle" = "Close";
+"userInfoViewAccountInfoChangePicturePickFromLibraryButtonTitle" = "Choose from Camera";
+
+/* User Info \ View Account Info \ Change Picture \ Use Camera */
+"userInfoViewAccountInfoChangePictureUseCameraButtonTitle" = "Use Camera";
+"userInfoViewAccountInfoChangePictureUseCancelButtonTitle" = "Cancel";
+"userInfoViewAccountInfoChangePictureUsePreviewButtonTitle" = "Preview";
+"userInfoViewAccountInfoChangePictureUseRetakeButtonTitle" = "Retake";
+"userInfoViewAccountInfoChangePictureUseUseButtonTitle" = "Use";
+
+/* User Login */
+"userLoginLoginButtonTitle" = "Login";
+"userLoginSignupButtonTitle" = "Sign Up";
+"userLoginForgotYourPasswordButtonTitle" = "Forgot your password?";
+"userLoginDoNotHaveAccountLabelText" = "Don't Have An Account?";
+"userLoginRememberMeButtonTitle" = "Remember Me";
+
+/* User Login Methods */
+"userLoginMethodsLoginButtonTitle" = "Login";
+"userLoginMethodsLoginWithFacebookButtonTitle" = "Login with Facebook";
+"userLoginMethodsContinueOfflineButtonTitle" = "Continue Offline";
+"userLoginMethodsDialogText" = "Login to connect with Vstrator.com and access more features online.";
+
+/* User Registration */
+"userRegistrationJoinVstratorButtonTitle" = "Join Vstrator";
+
+/* User Tips */
+"UserWelcomeTipTitleLabel" = "Welcome to Vstrator";
+"UserWelcomeTipTextLabel1" = "Vstrator lets you get better at the sports\nyou love faster than ever before.";
+"UserWelcomeTipTextLabel2" = "It’s easy to get started, just follow these\n3 simple steps:";
+"UserWelcomeTipTextLabel3" = "To see the tutorial again click the";
+"UserWelcomeTipStepLabel1" = "1. Record Video";
+"UserWelcomeTipStepLabel2" = "2. Vstrate";
+"UserWelcomeTipStepLabel3" = "3. Share";
+"UserLegalTipTitleLabel" = "Before you begin,";
+"UserLegalTipTextLabel1" = "Your use of this app is subject to the Terms of Use.";
+"UserLegalTipOkButton" = "I Agree";
+"UserCaptureTipTitleLabel" = "Rotate your phone sideways";
+"UserCaptureTipTextLabel" = "Record the best video for Vstrator";
+"UserCaptureTipDontShowAgainButtonTitle" = "Don't show again";
+"UserCaptureTipOkButtonTitle" = "Ok";
+"UserTutorialDontShowAgainButtonTitle" = "Don't show again";
+
+/* ---- Vstrator Strings  ---- */
+
+/* Users */
+"ProUserName" = "Pro";
+"UnknownUserName" = "User not found";
+
+/* Screen titles */
+"TitleLogin" = "Login";
+"TitleRegistration" = "Registration";
+"TitleContentVstrate" = "Library";
+"TitleContentSideBySide" = "Side by Side";
+"TitleContentUploadQueue" = "Uploads";
+"TitleSearch" = "Search";
+
+/* Home \ Quick start */
+"HomeQuickStartVstrateLabel" = "VSTRATE";
+"HomeQuickStartVstrateSubLabel1" = "Power your game with video analysis";
+"HomeQuickStartVstrateSubLabel2" = "tools and side by side comparison";
+"HomeQuickStartProLabel" = "JOIN THE COMMUNITY";
+"HomeQuickStartProSubLabel1" = "Share, connect and collaborate";
+"HomeQuickStartProSubLabel2" = "with the global Vstrator community";
+
+/* Home \ Pro User (Pro) */
+"HomeProUserNoClipsLabel" = "You don't have any videos yet! Select ‘Capture Video’ to get started!";
+"HomeProUserNoExtrasLabel" = "Extras are coming soon!";
+
+/* Home \ Side-by-Side */
+"HomeSideBySideLabel" = "Side by Side";
+"HomeSideBySideSelectClipLabel" = "Please select video";
+
+/* Home \ Vstrate */
+"HomeVstrateLabel" = "Vstrate";
+
+/* Issue Types */
+"IssueTypeBugReportName" = "Bug Report";
+"IssueTypeFeedbackName" = "Feedback";
+"IssueTypeSuggestionName" = "Suggestion";
+"IssueTypeEmpty" = "Issue Type";
+
+/* Quality */
+"UploadQualityHighName" = "High Quality";
+"UploadQualityLowName" = "Regular Quality";
+
+// Upload Options
+"UploadOnlyOnWiFiName" = "Upload only on WiFi";
+"UploadOnWWANName" = "Allow upload over WWAN";
+
+/* Media \ Clip Playback */
+"MediaClipPlaybackLoadingActivityTitle" = "Loading...";
+"MediaClipPlaybackProcessingActivityTitle" = "Processing...";
+
+/* Media \ Clip/Session Creation */
+"MediaClipSessionCreationSavingSessionActivityTitle" = "Saving Vstrated video...";
+"ProgressSavingVideo" = "Saving video...";
+
+/* Media \ Clip/Session Edit */
+"MediaClipSessionEditActionLabel" = "Action";
+"MediaClipSessionEditSportLabel" = "Sport";
+"MediaClipSessionEditSportActionLabel" = "Sport/Action";
+"MediaClipSessionEditSelectActionLabel" = "Select Action";
+"MediaClipSessionEditSelectSportLabel" = "Select Sport";
+"MediaClipSessionEditClipTitleField" = "Video's title";
+"MediaClipSessionEditNotesLabel" = "Notes";
+"MediaClipSessionEditCompressingVideoMessage" = "Preparing video...";
+"MediaClipSessionEditSavingMediaActivityTitle" = "Saving media...";
+"MediaClipSessionEditTitleLabel" = "Title";
+"MediaClipSessionEditDoYouWantToCancel" = "Are you sure you want to cancel this?";
+
+/* Media \ Clip/Session View (Open) */
+"MediaClipSessionViewClipTitleAndActionLabel" = "Video's Title and Action";
+"MediaClipSessionViewShareLabel" = "Share";
+"MediaClipSessionViewSideBySide" = "Side by Side";
+"MediaClipSessionViewTwitterSubmitButtonTitle" = "Post on Twitter";
+"MediaClipSessionViewTwitterMessageLabel" = "Your Tweet";
+"MediaClipSessionViewFacebookSubmitButtonTitle" = "Share on Facebook";
+"MediaClipSessionViewFacebookMessageLabel" = "Message for your post";
+"MediaClipSessionViewMailSubmitButtonTitle" = "Share on Facebook";
+"MediaClipSessionViewMailMessageLabel" = "Message for your post";
+"MediaClipSessionViewSmsSubmitButtonTitle" = "Share on Facebook";
+"MediaClipSessionViewSmsMessageLabel" = "Message for your post";
+"MediaClipSessionViewShareActivityTitle" = "Sharing...";
+
+/* Media \ Lists */
+"MediaListAllNoClipsExist" = "You haven't recorded or uploaded any videos yet.\n\nTo get started, open up the camera in the bottom menu";
+"MediaListAllNoClipsFound" = "No videos were found!\n\nTry changing your search terms!";
+"MediaListAllNoSessionsExist" = "You haven't Vstrated any videos yet.\n\nCreate your 1st Vstrated video by opening one of your videos and clicking the Vstrate button.";
+"MediaListAllNoSessionsFound" = "No Vstrated videos were found!\n\nTry changing your search terms!";
+"MediaListProNoClipsExist" = "You don't have any videos here!\n\nLet's download some!";
+"MediaListProNoClipsFound" = "No videos were found!\n\nTry changing your search terms!";
+"MediaListProNoSessionsExist" = "You don't have any Vstrated videos. here!\n\nLet's download some!";
+"MediaListProNoSessionsFound" = "No Vstrated videos were found!\n\nTry changing your search terms!";
+"MediaListUserNoClipsExist" = "You haven't recorded or uploaded any videos yet.\n\nGet started by opening the camera in the bottom menu.";
+"MediaListUserNoClipsFound" = "No videos were found!\n\nTry changing your search terms!";
+"MediaListUserNoSessionsExist" = "You haven't Vstrated any of your videos yet.\n\nCreate your 1st Vstrated video by opening one of your videos and clicking the Vstrate button.";
+"MediaListUserNoSessionsFound" = "No Vstrated videos were found!\n\nTry changing your search terms!";
+
+/* Media \ Share */
+"MediaClipShareTwitterMessage" = "I've uploaded a new video to Vstrator!";
+"MediaClipShareFacebookMessage" = "I've uploaded a new video to my Vstrator account!";
+"MediaClipShareMailMessage" = "I've uploaded a new video to my Vstrator account!";
+"MediaClipShareMailSubjectFormat" = "Vstrator video: %@";
+"MediaClipShareSmsMessage" = "I've uploaded a new video to Vstrator!";
+"InviteFriendsShareMessage" = "Please check out the new Vstrator app that I have been using to improve my game";
+"ShareMediaConfirmation" = "Your video has been shared";
+"InviteFriendsConfirmation" = "Your invitation has been posted";
+"TextPopupDoneButtonTitle" = "Post";
+"SharePopupTitle" = "SHARE VIDEO";
+"InviteFriendsPopupTitle" = "INVITE FRIENDS";
+"InviteFriendsBackButtonTitle" = "Cancel";
+"ShareWorkoutTitle" = "SHARE WORKOUT";
+"ShareWorkoutMessage" = "I just completed the super hard Reggie bush workout!";
+
+/* User Info \ Get Help */
+"UserInfoGetHelpIssueDescriptionLabel" = "Description of the Issue";
+"UserInfoGetHelpIssueSentMessage" = "Your issue has been successfully sent!";
+"UserInfoGetHelpIssueSentMessageTitle" = "Issue has been sent!";
+"UserInfoGetHelpSendingIssueActivityTitle" = "Sending issue...";
+
+/* User Info \ Version of the App */
+"UserInfoVersionOfTheAppLabel" = "Vstrator 1.0";
+"UserInfoLicenseOfTheAppLabel" = "Welcome to Vstrator, the dynamic video analysis app designed for athletes and coaches all over the world. With Vstrator’s easy-to-use video analysis tools you can instantly capture and analyze your game, anywhere, anytime. You can provide video and audio feedback, combined with sharing capabilities, the learning curve has never been so short. Analyze progress with side-by-side comparisons to see just how far you have come, and collaborate with your peers to get better faster.";
+
+/* User Info \ View Account Info \ Change Password */
+"UserInfoViewAccountInfoChangePasswordConfirmNewPasswordField" = "Confirm new password";
+"UserInfoViewAccountInfoChangePasswordCurrentPasswordField" = "Current Password";
+"UserInfoViewAccountInfoChangePasswordNewPasswordField" = "New Password";
+"UserInfoViewAccountInfoChangePasswordUpdatingPasswordActivityTitle" = "Updating password...";
+
+/* User Info \ View Account Info \ Change Picture */
+"UserInfoViewAccountInfoChangePictureUpdatingProfileActivityTitle" = "Updating profile...";
+"UserInfoViewAccountInfoChangePictureUseCameraPreviewLabel" = "Preview";
+
+/* User Info \ View Account Info */
+"UserInfoViewAccountInfoProfileUpdatedMessage" = "Your profile was updated";
+"UserInfoViewAccountInfoProfileUpdatedMessageTitle" = "Profile updated!";
+"UserInfoViewAccountInfoPasswordUpdatedMessage" = "Your password was updated";
+"UserInfoViewAccountInfoPasswordUpdatedMessageTitle" = "Password updated!";
+"UserInfoViewAccountInfoUpdatingProfileActivityTitle" = "Updating profile";
+
+/* User Login */
+"UserLoginEmailAddressField" = "Email Address";
+"UserLoginLoggingInActivityTitle" = "Logging in...";
+"UserLoginLoggingInFacebookActivityTitle" = "Logging in with Facebook...";
+"UserLoginLoggingOutActivityTitle" = "Logging out...";
+"UserLoginLoginLabel" = "Login";
+"UserLoginOrLabel" = "Or";
+"UserLoginPasswordField" = "Password";
+
+/* User Login Methods */
+"UserLoginMethodsLoggingInFacebookActivityTitle" = "Logging in with Facebook...";
+
+/* User Registration */
+"UserRegistrationConfirmPasswordField" = "Confirm Password";
+"UserRegistrationEmailAddressField" = "Email Address";
+"UserRegistrationFirstNameField" = "First Name";
+"UserRegistrationLastNameField" = "Last Name";
+"UserRegistrationPasswordField" = "Password";
+"UserRegistrationRegisteringUserActivityTitle" = "Registering user...";
+"UserRegistrationRegistrationLabel" = "Registration";
+
+/* Upload Queue */
+"UploadQueueAllButtonTitle" = "ALL";
+"UploadQueueInProgressButtonTitle" = "In Progress";
+"UploadQueueCompletedButtonTitle" = "Completed";
+"UploadQueueListEmptyText" = "You don’t have any videos being uploaded.";
+"UploadQueueListNotFoundText" = "You don’t have any videos being uploaded.";
+"UploadQueueRetryingActivityTitle" = "Trying to retry...";
+
+/* UploadRequestListViewCellRetryButtonTitle */
+"UploadRequestListViewCellRetryButtonTitle" = "Retry";
+
+/* Notifications */
+"ProcessingNotificationButtonActivityTitle" = "Processing...";
+
+/* Misc */
+"LoadingActivityTitle" = "Loading...";
+"SecondsText" = "secs";
+
+/* ------ Error messages ------  */
+
+"ErrorAccessToTwitterAccountsDeniedText" = "Access to Twitter properties denied";
+"ErrorAudioRecorderInitText" = "Cannot initialize audio recorder";
+"ErrorVideoPlayerInitText" = "Sorry, there was an error initializing the video player";
+"ErrorAudioRecorderRecordText" = "Cannot record audio";
+"ErrorBaseUrlIsNilOrInvalidText" = "Base URL is NIL";
+"ErrorClipAlreadyInTheLibraryText" = "This video already exists";
+"ErrorClipDurationExceedMaxText" = "Length of selected video is longer than we allow (15 seconds)";
+"ErrorClipNotFoundInTheLibraryText" = "The video was not found";
+"ErrorCredentialsAreNilOrInvalidText" = "Credentials are not set or invalid";
+"ErrorCurrentUserNotFoundText" = "Sorry, the current user could not be found";
+"ErrorDatabaseInitFailedText" = "Database error";
+"ErrorDatabaseSelectText" = "Database error";
+"ErrorEmailAddressBeginsOrEndsWithSpacesText" = "Please enter a valid email address";
+"ErrorEmailAddressHasInvalidLengthText" = "Maximum email length is %d characters";
+"ErrorEmailAddressIsEmptyText" = "Please enter a valid email address";
+"ErrorEmailAddressIsInvalidText" = "Please enter a valid email address";
+"ErrorFacebookResponseIsInvalidText" = "Facebook response is invalid";
+"ErrorFacebookResponseNotContainRequiredDataText" = "Facebook does not provide all required information: first and last name and email. Please allow access to this information.";
+"ErrorFirstNameBeginsOrEndsWithSpacesText" = "Sorry, your first name is invalid. Please try again";
+"ErrorFirstNameHasInvalidLengthText" = "Hold up! Your first name can't be longer than %d characters";
+"ErrorFirstNameIsEmptyText" = "First name is empty";
+"ErrorFirstNameIsInvalidText" = "Sorry, your first name is invalid";
+"ErrorGenericTitle" = "Error!";
+"ErrorIncompatibleVideoType" = "Sorry, the file you picked isn't compatible with Photo Library";
+"ErrorInvalidParameterValue" = "Invalid parameter value";
+"ErrorIssueDescriptionIsEmptyText" = "Issue description is invalid";
+"ErrorIssueDescriptionIsInvalidText" = "Issue description is invalid";
+"ErrorIssueTypeIsEmptyText" = "Not so fast! You forgot to select an issue type";
+"ErrorIssueTypeIsInvalidText" = "Issue type is invalid";
+"ErrorMediaServiceAssertionFailureText" = "Media Service error";
+"ErrorMediaServiceThreadingInconsistencyText" = "Media Service error";
+"ErrorNoMediaSourcesAvailableText" = "Sorry, neither Camera or Photo Library is available right now. Please try again.";
+"ErrorMemoryWarningOnTelestrationText" = "The application just received memory warning and had to stop the recording.";
+"ErrorMemoryWarningOnTelestrationTitle" = "Memory warning!";
+"ErrorOldPasswordIsNotValidText" = "Current password is invalid";
+"ErrorPasswordHasInvalidLengthText" = "Password must be between 6 and 20 characters";
+"ErrorPasswordIsEmptyText" = "Please enter your password";
+"ErrorPasswordIsInvalidText" = "The current password is invalid";
+"ErrorPasswordsAreNotEqualText" = "Sorry, the passwords do not match. Please try again!";
+"ErrorPhotoLibraryIsUnavailable" = "Videos are unavailable";
+"ErrorPrimarySportIsEmptyText" = "Primary sport is not selected";
+"ErrorPrimarySportIsInvalidText" = "Please select a primary sport";
+"ErrorRetryingUploadRequestText" = "Sorry, attempt to retry has failed. Please try again.";
+"ErrorSecondNameBeginsOrEndsWithSpacesText" = "Sorry, the last name you entered is invalid. Please try again";
+"ErrorSecondNameHasInvalidLengthText" = "Your last name cannot be longer than %d characters";
+"ErrorSecondNameIsEmptyText" = "Please enter your last name";
+"ErrorSecondNameIsInvalidText" = "Sorry, the last name you entered is invalid. Please try again";
+"ErrorSelectedActionIsEmptyText" = "Sorry, you must select an action";
+"ErrorSelectedActionIsInvalidText" = "Action is invalid";
+"ErrorSelectedSportActionNotFoundText" = "Hold up! The sport and/or action was not found";
+"ErrorSelectedSportIsEmptyText" = "Not so fast! You forgot to select a sport";
+"ErrorSelectedSportIsInvalidText" = "Sport is invalid";
+"ErrorSideBySideClipsAreNotSelectedText" = "You need two videos to use side by side";
+"ErrorTitleBeginsOrEndsWithSpacesText" = "The title entered is invalid, please change";
+"ErrorTitleCantSaveSession" = "Sorry, the Vstrated video did not save. Please try again.";
+"ErrorSavingSession" = "Sorry, the Vstrated video did not save. Please try again.";
+"ErrorTitleHasInvalidLengthText" = "Sorry, the title must be %d characters or less";
+"ErrorTitleIsEmptyText" = "Please enter a title";
+"ErrorTitleIsInvalidText" = "The title entered is invalid, please change.";
+"ErrorTwitterAccountNotSelectedText" = "Please select your Twitter account";
+"ErrorTwitterAccountsNotFoundText" = "Sorry, your Twitter account was not found. Please add one.";
+"ErrorTwitterUnderDevelopmentForIOS4Text" = "Twitter is only supported for iOS 5 and greater";
+"ErrorUnknownAccountTypeText" = "Account error";
+"ErrorUserIsLoggedInText" = "User is already logged in.\nPlease logout first!";
+"ErrorUserNotFoundText" = "User not found";
+"ErrorUserNotLoggedInText" = "User not logged in.\nPlease login first!";
+"ErrorValidateDeleteMedia" = "Cannot delete this video";
+"ErrorValidateDeleteMediaWithExcercises" = "Cannot delete this video. This video has linked exercise(s).";
+"ErrorValidateDeleteMediaWithSessions" = "Cannot delete this video. This video has linked vstrated video(s).";
+"ErrorValidateDeleteProcessingMedia" = "Cannot delete processing video.";
+"ErrorValueIsEmptyText" = "Value is empty";
+"ErrorValueIsInvalidText" = "Value is invalid";
+"ErrorVideoFileDoesNotExists" = "Video file does not exist";
+"ErrorVstratorApiIsUnreachableText" = "Sorry, the Vstrator site is currently unavailable";
+"ErrorWrongInputText" = "One or more fields contain empty or invalid values.\nPlease input valid values.";
+"ErrorWrongInputTitle" = "Input error!";
+"ErrorLoadingSelectedClip" = "Sorry, there was an error loading the video you selected";
+"ErrorLoadingSelectedSession" = "Sorry, there was an error with the file and it could not be processed.";
+"ErrorAudioSessionInitText" = "Sorry, there was an error initializing the audio session";
+"ErrorActivatingAudioSessionOrPlayer" = "Sorry, there was an error initializing the audio player";
+"ErrorAudioPlayerInitText" = "Sorry, there was an error initializing audio player";
+"ErrorLoginCanceled" = "Login canceled. Please try again.";
+"ErrorLogoutCanceledDueIncompleteUploadsText" = "Logout canceled because you have incomplete uploads. Please wait them to complete before logout.";
+"ErrorRecordingNotAvailableOnThisDevice" = "Video recording is unavailable";
+"ErrorRecordReason" = "Videos recorded on this device will only contain audio.";
+"ErrorUnableToOpenSafariWithURL" = "Unable to open Safari for the Vstrator site";
+"ErrorUnableToOpenURL" = "Unable to open the Vstrator site";
+"ErrorUploadThisVideoFirst" = "You need to upload this video first";
+"ErrorCannotShareMedia" = "Cannot share media";
+"ErrorCannotSendMail" = "Your device can't send email";
+"ErrorCannotSendSms" = "Your device can't send sms";
+"ErrorWithoutDescription" = "Unknown error";
+
+"JoinCommunityCloseButtonTitle" = "Back to the Vstrator App";
+"JoinCommunityGoButtonTitle" = "Access More Features Online";
+"JoinCommunityReason1" = "Connect with other coaches & athletes";
+"JoinCommunityReason2" = "Get better at your favorite sports";
+"JoinCommunityReason3" = "Find more at Vstrator.com";

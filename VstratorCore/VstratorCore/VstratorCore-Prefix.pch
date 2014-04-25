@@ -1,0 +1,13 @@
+//
+// Prefix header for all source files of the 'VstratorCore' target in the 'VstratorCore' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+    #if !(defined(DEBUG) || defined(RELEASE_APPSTORE))
+        #import "TestFlightConfiguration.h"
+    #endif
+    #import <SystemConfiguration/SystemConfiguration.h>
+    #import <MobileCoreServices/MobileCoreServices.h>
+#endif

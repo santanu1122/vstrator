@@ -1,0 +1,90 @@
+{
+    "requests": [
+                 {
+                 "class" : "ChangePasswordInfo",
+                 "method" : "POST"
+                 },
+                 {
+                 "class" : "ClipMetaInfo",
+                 "method" : "POST"
+                 },
+                 {
+                 "class" : "Issue",
+                 "method" : "POST"
+                 },
+                 {
+                 "class" : "Media",
+                 "method" : "PUT"
+                 },
+                 {
+                 "class" : "RegistrationInfo",
+                 "method" : "POST"
+                 },
+                 {
+                 "class" : "VstratorUserInfo",
+                 "method" : "PUT"
+                 },
+    ],
+    "responses": [
+                  {
+                  "class" : "MediaTypeInfo",
+                  "path" : "contentdownloads",
+                  "method" : "GET"
+                  },
+                  {
+                  "class" : "NotificationInfo",
+                  "path" : "notification",
+                  "method" : "GET"
+                  },
+                  {
+                  "class" : "NotificationInfo",
+                  "path" : "appnotifications",
+                  "method" : "GET"
+                  },
+                  {
+                  "class" : "SportInfo",
+                  "path" : "sports",
+                  "method" : "GET"
+                  },
+                  {
+                  "class" : "UploadRequestInfo",
+                  "path" : "clip",
+                  "method" : "GET"
+                  },
+                  {
+                  "class" : "VideoStatusInfo",
+                  "path" : "clip",
+                  "method" : "POST"
+                  },
+                  {
+                  "class" : "UploadRequestInfo",
+                  "path" : "vstratedclip",
+                  "method" : "GET"
+                  },
+                  {
+                  "class" : "VideoStatusInfo",
+                  "path" : "vstratedclip",
+                  "method" : "POST"
+                  },
+                  {
+                  "class" : "VideoStatusInfo",
+                  "path" : "clip/:videoKey",
+                  "method" : "GET"
+                  },
+                  {
+                  "class" : "VideoStatusInfo",
+                  "path" : "vstratedclip/:videoKey",
+                  "method" : "GET"
+                  },
+                  {
+                  "class" : "VstratorUserInfo",
+                  "path" : "user",
+                  "method" : "GET"
+                  },
+                  {
+                  "class" : "VstratorUserInfo",
+                  "path" : "user/register",
+                  "method" : "POST"
+                  },
+    ]
+}

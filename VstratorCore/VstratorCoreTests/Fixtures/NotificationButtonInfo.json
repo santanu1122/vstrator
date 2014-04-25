@@ -1,0 +1,8 @@
+{
+    "ID":"66fe13ff-2051-414a-80f7-57dabbc70bad",
+    "ButtonText":"Download",
+    "ButtonType":3,
+    "MediaType":1,
+    "MediaID":"789013ff-2051-414a-80f7-57dabbc70bd4",
+    "ClickURI":"http://foobar.com/click"
+}

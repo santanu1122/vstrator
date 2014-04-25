@@ -1,0 +1,24 @@
+{
+    "ID":"a9036e60-9b58-4ace-b12d-8533e1142354",
+    "name":"Beginner's program",
+    "description":"Step by step introduction for newbies",
+    "inAppPurchaseId":"com.vstrator.reggiebushapp.2beh8fyb903d",
+    "price":"$1",
+    "isPurchased":1,
+    "videos" :
+    [
+     {
+     "videoKeyType":1,
+     "videoKey":"3d84372e-3d58-47e3-9a63-941cba0853a6",
+     "title":"Reggie is performing bench press",
+     "videoDate":"2013-01-03T08:42:26.897",
+     "videoUrl":"https://www.vstrator.com/video/clips/3d84372e-3d58-47e3-9a63-1234567592b4",
+     "encodingStatus":2,
+     "sport":"Body-building",
+     "action":"Bench press",
+     "notes":"sample notes",
+     "authorID":"5249FF55-5084-4662-AA4D-D99BDF5E7415",
+     "setIDs":["a9036e60-9b58-4ace-b12d-8533e1142354"]
+     }
+    ]
+}

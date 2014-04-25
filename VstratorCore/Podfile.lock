@@ -1,0 +1,67 @@
+PODS:
+  - AFNetworking (1.3.3)
+  - Expecta (0.2.3)
+  - Facebook-iOS-SDK (3.7.1)
+  - FlurrySDK (4.2.4)
+  - GoogleConversionTracking (1.2.0)
+  - ISO8601DateFormatterValueTransformer (0.5.0):
+    - RKValueTransformers (~> 1.0.0)
+  - MagicalRecord (2.2)
+  - NSData+Base64 (1.0.0)
+  - OCMock (2.2.1)
+  - Reachability (3.1.1)
+  - RestKit (0.21.0):
+    - RestKit/Core
+  - RestKit/Core (0.21.0):
+    - RestKit/CoreData
+    - RestKit/Network
+    - RestKit/ObjectMapping
+  - RestKit/CoreData (0.21.0)
+  - RestKit/Network (0.21.0):
+    - AFNetworking (~> 1.3.0)
+    - RestKit/ObjectMapping
+    - RestKit/Support
+    - SOCKit
+  - RestKit/ObjectMapping (0.21.0):
+    - ISO8601DateFormatterValueTransformer (~> 0.5.0)
+    - RestKit/Support
+    - RKValueTransformers (~> 1.0.0)
+  - RestKit/Support (0.21.0):
+    - TransitionKit (= 1.1.1)
+  - RestKit/Testing (0.21.0)
+  - RKValueTransformers (1.0.0)
+  - SOCKit (1.1)
+  - TestFlightSDK (2.1.1-beta)
+  - TransitionKit (1.1.1)
+
+DEPENDENCIES:
+  - Expecta (~> 0.2.2)
+  - Facebook-iOS-SDK (~> 3.7.0)
+  - FlurrySDK (~> 4.2.3)
+  - GoogleConversionTracking (~> 1.2.0)
+  - MagicalRecord (~> 2.2)
+  - NSData+Base64 (~> 1.0.0)
+  - OCMock (~> 2.2.1)
+  - Reachability (~> 3.1.1)
+  - RestKit (~> 0.21.0)
+  - RestKit/Testing (~> 0.21.0)
+  - TestFlightSDK (~> 2.0)
+
+SPEC CHECKSUMS:
+  AFNetworking: 0700ec7a58c36ad217173e167f6e4df7270df66b
+  Expecta: dbc4a27fabb853bdd2e907e33f11ee43a9a47d0c
+  Facebook-iOS-SDK: bf38d403928f6adb652e2e5ae46253e0c6ba9a19
+  FlurrySDK: 2c1e7070d0d76dd597de7b0d09cbbdd4193f1622
+  GoogleConversionTracking: 2e86619d21afdb37670fc6007d1c5636ca173dbe
+  ISO8601DateFormatterValueTransformer: d0af1f50a9df42db72d7418db31938b8473e0af8
+  MagicalRecord: b1fc46c99a9749fe7fe7e6f43a89b62ef5201933
+  NSData+Base64: 4819562faee4544e3cf5703f2139820b09732b28
+  OCMock: 80e4cfbc71a0e1bd28caf10a9fda27da7c4c8402
+  Reachability: 2be6bc2fd2bd31d97f5db33e75e4b29c79e95883
+  RestKit: c11a30e7bc73513d9d2c2695672aba7697d24181
+  RKValueTransformers: 01dc043fd853f6e40459b2e732dff545298a0f91
+  SOCKit: 2f3bc4d07910de12dcc202815e07db68a3802581
+  TestFlightSDK: dea28c16f0bf65c49c4ed8939b2ae0b0ed9bf8b0
+  TransitionKit: d0e3344aac92991395d4c2e72d9c5a8ceeb12910
+
+COCOAPODS: 0.27.1

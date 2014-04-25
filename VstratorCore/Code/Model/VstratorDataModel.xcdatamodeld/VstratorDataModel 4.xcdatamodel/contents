@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="11E53" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Action" representedClassName="Action" syncable="YES">
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="media" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Media" inverseName="action" inverseEntity="Media" syncable="YES"/>
+        <relationship name="sport" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Sport" inverseName="actions" inverseEntity="Sport" syncable="YES"/>
+    </entity>
+    <entity name="Clip" representedClassName="Clip" parentEntity="Media" syncable="YES">
+        <attribute name="fakeAttribute" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <relationship name="session" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Session" inverseName="originalClip" inverseEntity="Session" syncable="YES"/>
+        <relationship name="sideBySide" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Session" inverseName="originalClip2" inverseEntity="Session" syncable="YES"/>
+    </entity>
+    <entity name="DownloadContent" representedClassName="DownloadContent" syncable="YES">
+        <attribute name="identity" attributeType="String" syncable="YES" isSyncIdentityProperty="YES">
+            <userInfo/>
+        </attribute>
+        <attribute name="status" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="exercise" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="download" inverseEntity="Exercise" syncable="YES"/>
+        <relationship name="media" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Media" inverseName="download" inverseEntity="Media" syncable="YES"/>
+        <relationship name="workout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="download" inverseEntity="Workout" syncable="YES"/>
+    </entity>
+    <entity name="Exercise" representedClassName="Exercise" syncable="YES">
+        <attribute name="equipment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identity" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="download" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="DownloadContent" inverseName="exercise" inverseEntity="DownloadContent" syncable="YES"/>
+        <relationship name="media" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Media" inverseName="exercises" inverseEntity="Media" syncable="YES"/>
+        <relationship name="params" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ExerciseParams" inverseName="exercise" inverseEntity="ExerciseParams" syncable="YES"/>
+        <relationship name="workouts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="WorkoutExercise" inverseName="exercise" inverseEntity="WorkoutExercise" syncable="YES"/>
+    </entity>
+    <entity name="ExerciseParams" representedClassName="ExerciseParams" syncable="YES">
+        <attribute name="duration" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="level" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="reps" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="resistance" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sets" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="exercise" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="params" inverseEntity="Exercise" syncable="YES"/>
+    </entity>
+    <entity name="Media" representedClassName="Media" isAbstract="YES" syncable="YES">
+        <attribute name="date" attributeType="Date" syncable="YES"/>
+        <attribute name="duration" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="height" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="identity" attributeType="String" indexed="YES" syncable="YES" isSyncIdentityProperty="YES">
+            <userInfo/>
+        </attribute>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publicURL" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="thumbnail" optional="YES" attributeType="Binary" valueTransformerName="" syncable="YES"/>
+        <attribute name="thumbURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 32" minValueString="0" maxValueString="3" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="videoKey" optional="YES" attributeType="String" elementID="recordingKey" syncable="YES"/>
+        <attribute name="width" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="action" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Action" inverseName="media" inverseEntity="Action" syncable="YES"/>
+        <relationship name="author" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="media" inverseEntity="User" syncable="YES"/>
+        <relationship name="download" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="DownloadContent" inverseName="media" inverseEntity="DownloadContent" syncable="YES"/>
+        <relationship name="exercises" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exercise" inverseName="media" inverseEntity="Exercise" syncable="YES"/>
+        <relationship name="uploadRequest" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="UploadRequest" inverseName="media" inverseEntity="UploadRequest" syncable="YES"/>
+    </entity>
+    <entity name="Notification" representedClassName="Notification" syncable="YES">
+        <attribute name="additionalNotifications" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contentType" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="identity" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pushedButtonIdentity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="buttons" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="NotificationButton" inverseName="notification" inverseEntity="NotificationButton" syncable="YES"/>
+        <relationship name="user" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="notifications" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="NotificationButton" representedClassName="NotificationButton" syncable="YES">
+        <attribute name="clickURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identity" attributeType="String" syncable="YES"/>
+        <attribute name="mediaIdentity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mediaType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="notification" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Notification" inverseName="buttons" inverseEntity="Notification" syncable="YES"/>
+    </entity>
+    <entity name="Session" representedClassName="Session" parentEntity="Media" syncable="YES">
+        <attribute name="audioFileDuration" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="audioFileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telestrationData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="url2" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="originalClip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Clip" inverseName="session" inverseEntity="Clip" syncable="YES"/>
+        <relationship name="originalClip2" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Clip" inverseName="sideBySide" inverseEntity="Clip" syncable="YES"/>
+    </entity>
+    <entity name="Sport" representedClassName="Sport" syncable="YES">
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES" isSyncIdentityProperty="YES">
+            <userInfo/>
+        </attribute>
+        <relationship name="actions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Action" inverseName="sport" inverseEntity="Action" syncable="YES"/>
+        <relationship name="authors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="primarySport" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="TrainingEvent" representedClassName="TrainingEvent" syncable="YES">
+        <attribute name="date" attributeType="Date" syncable="YES"/>
+        <attribute name="identity" attributeType="String" syncable="YES"/>
+        <attribute name="intensityLevel" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="workout" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="events" inverseEntity="Workout" syncable="YES"/>
+    </entity>
+    <entity name="UploadFile" representedClassName="UploadFile" syncable="YES">
+        <attribute name="identity" attributeType="String" syncable="YES"/>
+        <attribute name="status" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="uploadDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="request" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="UploadRequest" inverseName="files" inverseEntity="UploadRequest" syncable="YES"/>
+    </entity>
+    <entity name="UploadRequest" representedClassName="UploadRequest" syncable="YES">
+        <attribute name="failedAttempts" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="identity" attributeType="String" indexed="YES" syncable="YES" isSyncIdentityProperty="YES">
+            <userInfo/>
+        </attribute>
+        <attribute name="recordingKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="requestDate" attributeType="Date" syncable="YES"/>
+        <attribute name="shareFacebookStatus" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="shareTwitterStatus" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="sortOrder" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="status" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="uploadDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="uploadURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visibility" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="files" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="UploadFile" inverseName="request" inverseEntity="UploadFile" syncable="YES"/>
+        <relationship name="media" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Media" inverseName="uploadRequest" inverseEntity="Media" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="email" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="facebookAccessToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facebookExpirationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="facebookIdentity" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identity" attributeType="String" indexed="YES" syncable="YES" isSyncIdentityProperty="YES">
+            <userInfo/>
+        </attribute>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="picture" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="pictureUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tipCamera" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="tipSession" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="tipWelcome" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="twitterIdentity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uploadQuality" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="vstratorIdentity" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="vstratorUserName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="media" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Media" inverseName="author" inverseEntity="Media" syncable="YES"/>
+        <relationship name="notifications" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Notification" inverseName="user" inverseEntity="Notification" syncable="YES"/>
+        <relationship name="primarySport" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Sport" inverseName="authors" inverseEntity="Sport" syncable="YES"/>
+        <relationship name="workouts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Workout" inverseName="author" inverseEntity="Workout" syncable="YES"/>
+    </entity>
+    <entity name="Workout" representedClassName="Workout" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identity" attributeType="String" syncable="YES"/>
+        <attribute name="intensityLevel" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="author" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="workouts" inverseEntity="User" syncable="YES"/>
+        <relationship name="download" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="DownloadContent" inverseName="workout" inverseEntity="DownloadContent" syncable="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TrainingEvent" inverseName="workout" inverseEntity="TrainingEvent" syncable="YES"/>
+        <relationship name="exercises" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="WorkoutExercise" inverseName="workout" inverseEntity="WorkoutExercise" syncable="YES"/>
+    </entity>
+    <entity name="WorkoutExercise" representedClassName="WorkoutExercise" syncable="YES">
+        <attribute name="sortOrder" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="exercise" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="workouts" inverseEntity="Exercise" syncable="YES"/>
+        <relationship name="workout" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="exercises" inverseEntity="Workout" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Action" positionX="-0" positionY="45" width="128" height="90"/>
+        <element name="Clip" positionX="-171" positionY="-9" width="128" height="90"/>
+        <element name="DownloadContent" positionX="369" positionY="171" width="128" height="135"/>
+        <element name="Exercise" positionX="360" positionY="-252" width="128" height="165"/>
+        <element name="ExerciseParams" positionX="178" positionY="-324" width="128" height="150"/>
+        <element name="Media" positionX="171" positionY="234" width="128" height="315"/>
+        <element name="Notification" positionX="538" positionY="162" width="128" height="225"/>
+        <element name="NotificationButton" positionX="378" positionY="369" width="128" height="150"/>
+        <element name="Session" positionX="-56" positionY="270" width="128" height="135"/>
+        <element name="Sport" positionX="-119" positionY="-252" width="128" height="90"/>
+        <element name="TrainingEvent" positionX="-522" positionY="-186" width="128" height="105"/>
+        <element name="UploadFile" positionX="-333" positionY="54" width="128" height="135"/>
+        <element name="UploadRequest" positionX="-488" positionY="-3" width="128" height="240"/>
+        <element name="User" positionX="160" positionY="-126" width="128" height="360"/>
+        <element name="Workout" positionX="-342" positionY="-234" width="128" height="180"/>
+        <element name="WorkoutExercise" positionX="439" positionY="18" width="128" height="90"/>
+    </elements>
+</model>

@@ -1,0 +1,24 @@
+{
+    "ID":"7e0fbb96-44df-4874-889c-8624d126718f",
+    "NotificationType":0, "ContentType":0,
+    "Title":"Test Title 2",
+    "Body":"Sample body text 2",
+    "AdditionalNotification": 0,
+    "ImageURI":"http://www.vstrator.com", "AdditionalNotifications":true, "NotificationButtons":
+    [
+     {
+     "ID":"66fe13ff-2051-414a-80f7-57dabbc70bd4",
+     "ButtonText":"OK",
+     "ButtonType":0,
+     "ClickURI":"http://api.vastrator.com",
+     "ResponseValue":"Test Value"
+     },
+     {
+     "ID":"66fe13ff-2051-414a-80f7-57dabbc70bad",
+     "ButtonText":"Download",
+     "ButtonType":3,
+     "MediaType":1,
+     "MediaTypeID":"789013ff-2051-414a-80f7-57dabbc70bd4"
+     }
+     ]
+}
